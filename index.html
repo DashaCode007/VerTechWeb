@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icon/profile.png" type="image/x-icon">
+    <title>JayR's Portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="parallax">
+      <div class="nav-container">
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logoContainer" data-aos="flip-right" id="@dasha">
+          <div class="logImg">
+            <img src="./img/logoo.png" alt="">
+          </div>
+            <div class="logoText">
+              <H4>VIRTOUSOTECH<br><div class="logotextSpan">SOLUTION</div></H4>
+            </div>
+        </div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <button class="side-btn float-end position-absolute" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" id="OpenMenu">☰
+            <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+        </button>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="#@dasha">Home</a></li>
+            <li><a href="#ABOUT">About</a></li> 
+            <li class="services">
+              <a href="#SERVICES">Services</a>
+            </li>
+            <li><a href="#myContact">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+      <img src="img/header2.jpg" class="background">
+      
+    <div class="homeh1" data-aos="fade-down" data-aos-duration="2000">
+        <div class="home-text">
+        <h1>"We might be well- <br>suited for each other"</h1> <h5 class="">Boost your brand with engaging <br>video content in just<span> FOUR WEEKS</span> !</h5>   
+    </div>
+    <div class="homeImg">
+      <img src="./img/logoo.png" alt="">
+    </div>
+    </div>
+  </header>
+  <!-- ABOUT PAGE -->
+  <div class="body-container" id="ABOUT">
+  <div class="myBio p-xl-5">
+    <div class="aboutPage">
+      <div class="aboutText">
+          <h2>About Us</h2>
+          <h1>How we deal with the law</h1>
+          <p>Our clients' bottom line is our top priority. We are in constant communication with the people we serve and are committed to advancing the immediate needs and wants of our clients. Our team works around the clock to provide the necessary services and support that each client needs from us.</p>
+      </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvas" data-bs-keyboard="true" data-bs-backdrop="false" data-bs-scroll="true" data-bs-backdrop="static">
+      <div class="offcanvas-header">
+          <h6 class="offcanvas-title d-sm-block" id="offcanvas">Menu</h6>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body px-0">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+              <li class="nav-item">
+                  <a href="#" class="nav-link text-truncate">
+                      <i class="fs-5 bi-house"></i><span class="ms-1 d-sm-inline">Home</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#myBio" data-bs-toggle="collapse" class="nav-link text-truncate">
+                      <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-sm-inline">About</span> </a>
+              </li>
+              <li class="dropdown">
+                <a href="#myServices" class="nav-link dropdown-toggle text-truncate" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="ms-1 d-sm-inline">Services</span>
+                </a>
+            </li>
+              <li>
+                  <a href="#myPortfolio" class="nav-link text-truncate">
+                      <i class="fs-5 bi-table"></i><span class="ms-1 d-sm-inline">Portfolio</span></a>
+              </li>
+              <li>
+                  <a href="#myResume" class="nav-link text-truncate">
+                      <i class="fs-5 bi-grid"></i><span class="ms-1 d-sm-inline">Resume</span></a>
+              </li>
+              <li>
+                  <a href="#myContact" class="nav-link text-truncate">
+                      <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">Contacts</span> </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+      <div class="about-txt" id="myAbout">
+       <h2>Toolkit</h2>
+        <h5>Editing Tools</h5>
+        <div class="about-tools">
+          <div class="tool-img">
+            <div class="tool-item">
+              <img src="./img/icon/capcut-seeklogo.svg" alt="CapCut">
+              <p>CapCut</p>
+            </div>
+            <div class="tool-item">
+              <img src="./img/icon/canva.png" alt="Canva">
+              <p>Canva</p>
+            </div>
+            <div class="tool-item">
+              <img src="./img/icon/photoshop.png" alt="PhotoShop">
+              <p>PhotoShop</p>
+            </div>
+            <div class="tool-item">
+              <img src="./img/icon/premiere-pro.svg" alt="Premiere">
+              <p>Premiere</p>
+            </div>
+          </div>
+        </div>
+
+        <h5>Project Management Tools</h5>
+        <div class="about-tools">
+          <div class="tool-img">
+            <div class="tool-item">
+              <img src="./img/icon/google-drive.png" alt="CapCut">
+              <p>Google Drive</p>
+            </div>
+            <div class="tool-item">
+              <img src="./img/icon/manychat.jpeg" alt="Canva">
+              <p>Many Chat</p>
+            </div>
+            <div class="tool-item">
+              <img src="./img/icon/clickup.svg" alt="PhotoShop">
+              <p>Click Up</p>
+            </div>
+          </div>
+        </div>
+           
+  </div>
+</div>
+
+  <!-- Services Section -->
+  <div class="portfolio-container py-xl-5" id="SERVICES">
+    <h1 class="text-center py-lg-2">Our Services</h1>
+    <p class="text-center mb-3">Share your services or specializations here, then list them down as bullet points for mobile-friendly easy reading. </p>
+    <div class="middle-nav">
+      <ul class="nav nav-underline mb-3 justify-content-center text-black" id="pills-tab" role="tablist">
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link active text-info" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link text-info" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web" aria-selected="false">Web Design</button>
+        </li>
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link text-info" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">Branding</button>
+        </li>
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link text-info" id="pills-thumb-tab" data-bs-toggle="pill" data-bs-target="#pills-thumb" type="button" role="tab" aria-controls="pills-thumb" aria-selected="false">WordPress</button>
+        </li>
+        <li class="nav-item p-2" role="presentation">
+          <button class="nav-link text-info" id="pills-cert-tab" data-bs-toggle="pill" data-bs-target="#pills-cert" type="button" role="tab" aria-controls="pills-cert" aria-selected="false">Social Media Management</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active all-img" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+          <h2>All Sample</h2>
+        </div>
+        <div class="tab-pane fade tab-web" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+          <h2>Web Sample</h2>
+        </div>
+        <div class="tab-pane fade app-img" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
+          <h2>Braning sample</h2>
+        </div>
+        <div class="tab-pane fade all-img" id="pills-thumb" role="tabpanel" aria-labelledby="pills-thumb-tab">
+         <h2>Wordpress</h2>
+        </div>
+        <div class="tab-pane fade cert-img" id="pills-cert" role="tabpanel" aria-labelledby="pills-cert-tab">
+         <h2>Social Media</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container pb-lg-5" id="myContact">
+        <div class="contact-second">
+          <h3 class="py-3">Contact Us</h3>
+          <ul>
+            <li><i class="material-icons" style="font-size:36px;">map</i>123 Anywhere St. Any City, ST 12345</li>
+            <li><i class="material-icons" style="font-size:36px;">call</i>+63 123-456-789</li>
+            <li><i class="material-icons" style="font-size:36px;">mail</i><a href="mailto:virtuosotechsolution@gmail.com">virtuosotechsolution@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="contactFooter">
+        <div>
+          <h4>Follow us online <span>
+            <a href="https://www.facebook.com/profile.php?id=61563357643189&mibextid=ZbWKwL"><img class="img-fluid p-md-2" src="./img/icon/facebook.png" alt=""></a>
+            <a href="https://www.facebook.com/JayJay8920"><img class="img-fluid" src="./img/icon/instagram.png" alt=""></a>
+          </span></h4>   
+            <p>This is an accessible workplace. Persons with disabilities are welcome to apply.</p>
+        </div>
+        <div class="footerLogo">
+          <div class="logImg">
+              <img src="./img/logoo.png" alt="Virtousotech Logo">
+          </div>
+          <div class="footerlogoText">
+              <h4>VIRTOUSOTECH<br><span class="logotextSpan">SOLUTION</span></h4>
+          </div>
+      </div>
+      
+        </div>
+    </div>
+    
+</div>
+<script src="/script/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>         
+  AOS.init();
+</script>
+</body>
+</html>
+
+
+
