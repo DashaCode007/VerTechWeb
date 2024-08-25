@@ -66,7 +66,7 @@ section {
     color: #fff;
   }
   .nav-links a {
-    color: #cdad7d;
+    color: #eeead6;
     text-decoration: none;
   }
   
@@ -282,7 +282,23 @@ margin: auto;
   font-family: "Libre Baskerville", serif;
 }
 .portfolio-container p {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.service {
+  margin-bottom: 40px;
+}
+.service h2 {
+  color: #4c3d3d;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.service p {
+  font-size: 18px;
 }
 
 .middle-nav {
@@ -307,8 +323,8 @@ margin: auto;
 }
 .all-img img {
   padding: 30px 10px;
-  width: 302px;
-  height: 200px;
+  max-width: 550px;
+  max-height: 450px;
 }
 .photo-content {
   display: flex;
@@ -316,21 +332,15 @@ margin: auto;
   align-items: center;
 }
 .tab-web img {
-  width: 500px;
+  object-fit:cover;
 }
-.tab-web .linemob {
-  padding: 10px;
-  width: 200px;
-  height: 300px;
+
+.element-divider {
+  border: 2px solid;
+  width: 80%;
+  margin: auto;
 }
-.app-img img {
- 
-  padding: 30px 10px;
-}
-.cert-img img {
-  height: 440px;
-  padding-top: 30px;
-}
+
 
 /* Services Section */
 .box-container {
@@ -357,9 +367,25 @@ margin: auto;
 .nav-link:active {
   color: #C07F00 !important;
 }
+
+
+.service-container {
+  max-width: 950px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+
+}
+.dev-card {
+  border: 4px solid #4c3d3d ;
+  margin: 10px;
+  border-radius: 12px;
+  text-align: center;
+  justify-content: center;
+}
 .dev-card:hover {
   background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: 0 8px 32px 0 #ffe7855e;
 backdrop-filter: blur( 6.5px );
 -webkit-backdrop-filter: blur( 6.5px );
 border-radius: 12px;
@@ -367,82 +393,44 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 transition: transform 1000ms, box-shadow 800ms;
 }
 
+
+
  /* Carousel Section */
-[type=radio] {
-  display: none;
+
+.caro-container {
+  max-width: 900px;
+}
+swiper-container {
+  width: 100%;
+  height: 500px;
 }
 
-#slider {
-  height: 35vw;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --swiper-navigation-color: #4c3d3d ; /* Custom color */
 }
 
-#slider label {
-  margin: auto;
-  width: 60%;
-  height: 100%;
-  border-radius: 4px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  cursor: pointer;
-  transition: transform 0.4s ease;
+
+
+swiper-slide img {
+  display: block;
+  width: 800px;
+  height: 500px;
 }
 
-#s1:checked ~ #slide1,
-#s2:checked ~ #slide2,
-#s3:checked ~ #slide3,
-#s4:checked ~ #slide4,
-#s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
+.firstSlide {
+  background-color: #FFF7D4;
 }
 
-#s1:checked ~ #slide2,
-#s2:checked ~ #slide3,
-#s3:checked ~ #slide4,
-#s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
+.mySwiper {
 }
-
-#s1:checked ~ #slide3,
-#s2:checked ~ #slide4,
-#s3:checked ~ #slide5,
-#s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
-}
-
-#s1:checked ~ #slide4,
-#s2:checked ~ #slide5,
-#s3:checked ~ #slide1,
-#s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
-}
-
-#s1:checked ~ #slide5,
-#s2:checked ~ #slide1,
-#s3:checked ~ #slide2,
-#s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
-}
-
-#slide1 { background: #00BCD4; }
-#slide2 { background: #4CAF50; }
-#slide3 { background: #CDDC39; }
-#slide4 { background: #FFC107; }
-#slide5 { background: #FF5722; }
-
-
 
 
 
@@ -451,22 +439,30 @@ transition: transform 1000ms, box-shadow 800ms;
 /* CONTACT SECTION */
 
 .contact-container {
-  max-width: 1000px;
   margin: auto;
-  background-color: #FFF7D4;
+  background-color: #B99470;
+  color: #121212;
 }
 .contact-container h3 {
   padding: 10px 0;
-  color: #4C3D3D;
+  color: #121212;
 }
 .contact-first {
-  width: 35%;
+  display: flex;
+}
+.contactQuote {
+  margin: auto;
+  color: #121212;
+}
+.contactCon {
+  max-width: 1000px;
+  margin: auto;
 }
 .contact-second {
   font-family: "Libre Baskerville", serif;
   font-size: 15px ;
   width: 50%;
-  color: #4C3D3D;
+  color: #121212;
 }
 .contact-second ul {
   padding: 0;
@@ -486,9 +482,6 @@ transition: transform 1000ms, box-shadow 800ms;
 .contactFooter {
   display: flex;
   justify-content: space-between;
-}
-.footerLogo {
-  display: flex;
 }
 .footerLogo {
   display: flex;

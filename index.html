@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/icon/profile.png" type="image/x-icon">
-    <title>JayR's Portfolio</title>
+    <link rel="shortcut icon" href="./img/logoo.png" type="image/x-icon">
+    <title>Virtuoso Tech</title>
 </head>
 <body>
   <div class="wrapper">
@@ -140,7 +140,7 @@
               <p>Google Drive</p>
             </div>
             <div class="tool-item">
-              <img src="./img/icon/manychat.jpeg" alt="Canva">
+              <img src="./img/icon/manychat.png" alt="Canva">
               <p>Many Chat</p>
             </div>
             <div class="tool-item">
@@ -157,10 +157,39 @@
   <div class="portfolio-container py-xl-5" id="SERVICES">
     <h1 class="text-center py-lg-2">Our Services</h1>
     <p class="text-center mb-3">Share your services or specializations here, then list them down as bullet points for mobile-friendly easy reading. </p>
+    <div class="services-section">
+      <div class="service">
+        <h2>Video Editing</h2>
+        <p>We transform raw footage into polished, captivating videos that tell your story effectively.</p>
+      </div>
+      <div class="service">
+          <h2>Branding</h2>
+          <p>We help build strong brand identities that connect with your audience and leave a lasting impression.</p>
+      </div>
+
+      <div class="service">
+          <h2>Social Media Management</h2>
+          <p>Let us handle your social media, from content creation to engagement, so you can focus on your business.</p>
+      </div>
+
+      <div class="service">
+          <h2>Graphic Design</h2>
+          <p>Our designs make your brand stand out with stunning logos, marketing materials, and digital graphics.</p>
+      </div>
+
+      <div class="service">
+          <h2>Web Design</h2>
+          <p>We create visually appealing websites to convert visitors into loyal customers.</p>
+      </div>
+  </div>
+    
+    
+    
+    <h3>Sample Services</h3>
     <div class="middle-nav">
       <ul class="nav nav-underline mb-3 justify-content-center text-black" id="pills-tab" role="tablist">
         <li class="nav-item p-2" role="presentation">
-          <button class="nav-link active text-info" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+          <button class="nav-link active text-info" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Video Editing</button>
         </li>
         <li class="nav-item p-2" role="presentation">
           <button class="nav-link text-info" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web" aria-selected="false">Web Design</button>
@@ -169,24 +198,70 @@
           <button class="nav-link text-info" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">Branding</button>
         </li>
         <li class="nav-item p-2" role="presentation">
-          <button class="nav-link text-info" id="pills-thumb-tab" data-bs-toggle="pill" data-bs-target="#pills-thumb" type="button" role="tab" aria-controls="pills-thumb" aria-selected="false">WordPress</button>
+          <button class="nav-link text-info" id="pills-thumb-tab" data-bs-toggle="pill" data-bs-target="#pills-thumb" type="button" role="tab" aria-controls="pills-thumb" aria-selected="false">Graphic Design</button>
         </li>
         <li class="nav-item p-2" role="presentation">
           <button class="nav-link text-info" id="pills-cert-tab" data-bs-toggle="pill" data-bs-target="#pills-cert" type="button" role="tab" aria-controls="pills-cert" aria-selected="false">Social Media Management</button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-          <h2>All Sample</h2>
+        <div class="tab-pane show active caro-container" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+          loop="true">
+          <swiper-slide class="firstSlide">
+            <iframe width="320" height="415" class="video-iframe m-lg-3 rounded" src="https://youtube.com/embed/No_cI13HfhQ?si=XCphQjd_kJF7HJVJ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="320" height="415" class="video-iframe rounded" src="https://www.youtube.com/embed/Pc7mi_4U6Mc?si=Krk2Rf5s5Zr095e_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </swiper-slide>
+          <swiper-slide class="firstSlide">
+            <iframe width="320" height="415" class="video-iframe m-lg-3 rounded" src="https://youtube.com/embed/eFVohkSvyN4?si=kNul9Fn6MNWxn522" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </swiper-slide>
+        </swiper-container>
         </div>
-        <div class="tab-pane fade tab-web" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
-          <h2>Web Sample</h2>
+        <div class="tab-pane fade tab-web caro-container" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+          loop="true">
+            <swiper-slide class="firstSlide">
+              <img class="img-fluid" class="p-md-2" src="./img/linestyle.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="firstSlide">
+              <img class="img-fluid" src="/img/portOne.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="firstSlide">
+              <img class="img-fluid" src="/img/portTwo.png" alt="">
+            </swiper-slide>
+          </swiper-container>
         </div>
-        <div class="tab-pane fade app-img" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
+        <div class="tab-pane fade app-img caro-container" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
           <h2>Braning sample</h2>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+          loop="true">
+            <swiper-slide class="firstSlide">Slide 2   
+            </swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+          </swiper-container>
         </div>
-        <div class="tab-pane fade all-img" id="pills-thumb" role="tabpanel" aria-labelledby="pills-thumb-tab">
-         <h2>Wordpress</h2>
+        <div class="tab-pane fade all-img caro-container" id="pills-thumb" role="tabpanel" aria-labelledby="pills-thumb-tab">
+         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+         loop="true">
+         <swiper-slide class="firstSlide">
+          <img class="img-fluid" class="p-md-2" src="./img/graph1.png" alt="">
+        </swiper-slide>
+        <swiper-slide class="firstSlide">
+          <img class="img-fluid" src="/img/graph2.png" alt="">
+        </swiper-slide>
+        <swiper-slide class="firstSlide">
+          <img class="img-fluid" src="/img/graph3.png" alt="">
+        </swiper-slide>
+        <swiper-slide class="firstSlide">
+          <img class="img-fluid" src="/img/graph4.png" alt="">
+        </swiper-slide>
+      </swiper-container>
         </div>
         <div class="tab-pane fade cert-img" id="pills-cert" role="tabpanel" aria-labelledby="pills-cert-tab">
          <h2>Social Media</h2>
@@ -195,16 +270,45 @@
     </div>
     </div>
 
+    <div class="element-divider"></div>
+
+    <!-- Service Card -->
+    <div class="service-container my-xl-5" id="myServices">
+      <div class="box-container">
+        <div class="dev-card">
+          <i><img class="image-fluid" src="/img/icon/partnership.png" alt=""></i>
+          <h3 class="mb-4">Branding Strategy</h3>
+          <p>Develop and establish the brand's core identity and values.</p>
+        </div>
+        <div class="dev-card">
+          <i><img class="image-fluid" src="/img/icon/ancestors.png" alt=""></i>
+          <h3 class="mb-4">Value-Based Community</h3>
+          <p>Engage with the target audience by sharing stories and content that align with their values and needs, fostering trust and loyalty.</p>
+        </div>
+        <div class="dev-card">
+          <i><img class="image-fluid" src="./img/icon/handshake.png" alt=""></i>
+          <h3 class="mb-4">People into Customers</h3>
+          <p>Convert the engaged audience into paying customers through testimonials, case studies, and targeted strategies.</p>
+        </div>
+      </div>
+      </div>
+
     <!-- Contact Section -->
     <div class="contact-container pb-lg-5" id="myContact">
+      <div class="contactCon">
+        <div class="contact-first">
         <div class="contact-second">
-          <h3 class="py-3">Contact Us</h3>
+          <h2 class="py-3">Contact Us</h2>
           <ul>
-            <li><i class="material-icons" style="font-size:36px;">map</i>123 Anywhere St. Any City, ST 12345</li>
+            <li><i class="material-icons" style="font-size:36px;">map</i>Manila, Philippines</li>
             <li><i class="material-icons" style="font-size:36px;">call</i>+63 123-456-789</li>
             <li><i class="material-icons" style="font-size:36px;">mail</i><a href="mailto:virtuosotechsolution@gmail.com">virtuosotechsolution@gmail.com</a></li>
           </ul>
         </div>
+        <div class="contactQuote">
+          <i>"Empowering your vision through creativity and innovation—because your success is our masterpiece."</i>
+        </div>
+      </div>
         <div class="contactFooter">
         <div>
           <h4>Follow us online <span>
@@ -224,8 +328,10 @@
       
         </div>
     </div>
-    
+  </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/script/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
