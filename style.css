@@ -166,7 +166,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 100px;
-    height: 74vh;
+    height: auto;
     margin: auto;
   }
 .home-text {
@@ -324,7 +324,7 @@ margin: auto;
 .all-img img {
   padding: 30px 10px;
   max-width: 550px;
-  max-height: 450px;
+  max-height: 500px;
 }
 .photo-content {
   display: flex;
@@ -334,13 +334,6 @@ margin: auto;
 .tab-web img {
   object-fit:cover;
 }
-
-.element-divider {
-  border: 2px solid;
-  width: 80%;
-  margin: auto;
-}
-
 
 /* Services Section */
 .box-container {
@@ -483,6 +476,9 @@ swiper-slide img {
   display: flex;
   justify-content: space-between;
 }
+.contactFooter p {
+  max-width: 500px;
+}
 .footerLogo {
   display: flex;
   align-items: center;
@@ -510,10 +506,39 @@ swiper-slide img {
 
   
   /* APPLYING MEDIA QUERIES */
+@media (max-width: 1200px){
+  .homeImg img {
+    height: 220px;
+    width: 400px;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+    margin-left: 70px;
+  }
+  .home-text h5 {
+    margin-left: 70px;
+    font-size: 20px;
+  }
+  .aboutPage {
+    padding: 30px;
+}
+  .about-txt {
+    padding: 30px
+  }
+  .tool-img {
+    padding: 20px;
+  }
+}
+
+
+
+
   @media (min-width: 768px) {
     .offcanvas {
       display: none;
     }
+
+    
   }
   @media (max-width: 768px) {
     .check {
@@ -545,7 +570,7 @@ swiper-slide img {
       font-size: 20px;
       font-weight: 900;
       right: 15px;
-      top: 20px;
+      top: 30px;
       font-weight: 900;
       color: #121212;
       background-color: #cdad7d;
@@ -569,17 +594,48 @@ swiper-slide img {
       background-color: #4c9e9e;
     }
 
-    .logo {
+    .logoText h4 {
       font-size: 20px;
-      left: 20px;
-      top: 20px;
+    }
+    .logotextSpan {
+      padding-left: 53px;
+    }
+    .homeh1 {
+      gap: 10px;
     }
     .home-text h1 {
-      font-size: 30px;
-      line-height: 1;
+      font-size: 24px;
+      margin-top: 150px;
+      margin-left: 20px;
+      margin-bottom: 70px;
+  }
+  .homeImg img {
+    height: 150px;
+    width: 500px;
+}
+  .home-text h5 {
+    font-size: 25px;
+    margin: 20px;
+    margin-right: 0;
   }
     .myBio {
       flex-direction: column;
+    }
+    .about-txt {
+      width: auto;
+    }
+    .aboutText p {
+      max-width: 300px;
+    }
+
+    .portfolio-container {
+      max-width: 350px;
+    }
+    .service-text {
+      margin-bottom: 3rem;
+    }
+    .service-container {
+      margin-bottom: 3rem;
     }
     .bio-img{
       width: 100%;
@@ -599,11 +655,10 @@ swiper-slide img {
       padding-bottom: 100px;
     }
 
-    .bio-btn button {
-      font-size: 10px;
-      border-radius: 30px;
-      padding: 1rem 2rem;
+    .tool-img {
+      gap: 12px;
   }
+
   .tab-content {
     align-items: center;
   }
@@ -650,8 +705,19 @@ swiper-slide img {
   }
   .contact-first, .contact-second, .contact-third {
     width: auto;
+    display: block;
   }
   .contact-second ul {
-    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 50px;
   }
+  .contactQuote {
+    margin-bottom: 50px;
   }
+  .contactFooter {
+    display: block;
+  }
+  .contactFooter a {
+    padding: 10px;
+  }
+}
