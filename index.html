@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/logoo.png" type="image/x-icon">
+    <link class="img-fluid" rel="shortcut icon" href="./img/logoo.png" type="image/x-icon">
     <title>Virtuoso Tech</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
       <div class="nav-container">
       <nav class="navbar">
         <!-- LOGO -->
-        <div class="logoContainer" data-aos="flip-right" id="@dasha">
+        <div class="logoContainer" data-aos="flip-right" id="home">
           <div class="logImg">
             <img src="./img/logoo.png" alt="">
           </div>
@@ -39,11 +39,9 @@
           <!-- NAVIGATION MENUS -->
           <div class="menu">
     
-            <li><a href="#@dasha">Home</a></li>
-            <li><a href="#ABOUT">About</a></li> 
-            <li class="services">
-              <a href="#SERVICES">Services</a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#services">Services</a></li>
             <li><a href="#myContact">Contact</a></li>
           </div>
         </ul>
@@ -61,7 +59,7 @@
     </div>
   </header>
   <!-- ABOUT PAGE -->
-  <div class="body-container" id="ABOUT">
+  <div class="body-container" id="about">
   <div class="myBio p-xl-5">
     <div class="aboutPage">
       <div class="aboutText">
@@ -80,17 +78,17 @@
       <div class="offcanvas-body px-0">
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
               <li class="nav-item">
-                  <a href="#" class="nav-link text-truncate">
+                  <a href="#home" class="nav-link text-truncate">
                       <i class="fs-5 bi-house"></i><span class="ms-1 d-sm-inline">Home</span>
                   </a>
               </li>
               <li>
-                  <a href="#myBio" data-bs-toggle="collapse" class="nav-link text-truncate">
-                      <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-sm-inline">About</span> </a>
+                <a href="#about" class="nav-link text-truncate">
+                  <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">About</span> </a>
               </li>
               <li>
-                <a href="#myServices" class="nav-link text-truncate" id="dropdown" data-bs-toggle="dropdown">
-                  <span class="ms-1 d-sm-inline">Services</span>  </a>
+                <a href="#services" class="nav-link text-truncate">
+                  <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">Services</span> </a>
              </li>
               <li>
                   <a href="#myContact" class="nav-link text-truncate">
@@ -99,7 +97,7 @@
           </ul>
       </div>
   </div>
-      <div class="about-txt" id="myAbout">
+      <div class="about-txt" id="about">
        <h2>Toolkit</h2>
         <h5>Editing Tools</h5>
         <div class="about-tools">
@@ -145,7 +143,7 @@
 </div>
 
     <!-- Service Card -->
-    <div class="service-container my-xl-5" id="myServices">
+    <div class="service-container my-xl-5" id="services">
       <div class="box-container">
         <div class="dev-card">
           <i><img class="image-fluid" src="/img/icon/partnership.png" alt=""></i>
@@ -166,7 +164,7 @@
       </div>
 
   <!-- Services Section -->
-  <div class="portfolio-container py-xl-5" id="SERVICES">
+  <div class="portfolio-container py-xl-5" id="services">
     <div class="service-text">
     <h1 class="text-center py-lg-2">Our Services</h1>
     <p class="text-center mb-3">Share your services or specializations here, then list them down as bullet points for mobile-friendly easy reading. </p>
